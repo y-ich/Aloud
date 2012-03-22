@@ -413,7 +413,7 @@ $('#input').bind 'input', ->
 
   if ws.length >= targetWords.length * 0.67
     $('#result').html html
-    points = Math.floor((count / targetWords.length) * 100)
+    points = Math.floor(Math.sqrt(count / targetWords.length * count / ws.length) * 100)
     if points < 40
       points += ' points. Try again!'
     else if points < 60
@@ -436,3 +436,5 @@ $('#input').bind 'keypress', (event) ->
       $(this).val ''
     when 'n'
       nextQuote()
+      $(this).val ''
+      $('#result').html ''
