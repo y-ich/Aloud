@@ -401,7 +401,7 @@ words = (str) ->
 
 $('#input').bind 'input', ->
   count = 0
-  ws = $(this).val().split(/[^a-zA-Z0-9'+]/)
+  ws = $(this).val().toLowerCase().split(/[^a-zA-Z0-9'+]/)
   html = ''
   targetWords = words(quote.quote)
   for w in ws
