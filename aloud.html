@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 
+   - Fire Me!: Checking your pronunciation
+   - author: ICHIKAWA, Yuji
+   - Copyright (C) 2012 ICHIKAWA, Yuji (New 3 Rs)
+  -->
+<!-- <html manifest="calculator.manifest"> -->
+<html>
+<head>
+  <title>発音練習サイト Aloud</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="icon" href="images/favicon.ico" />
+  <!-- 320x460 for iPhone -->
+  <link rel="apple-touch-startup-image" media="(max-device-width: 480px)" href="images/startup-iphone.png" />
+  <!-- iPad Portrait 768x1004 -->
+  <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/startup-portrait.png" />
+  <!-- iPad Landscape 1024x748 -->
+  <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/startup-landscape.png" />
+  <script src="lib/jq.mobi.min.js"></script>
+ <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+<!--  <script type="text/javascript">
+var addToHomeConfig = {
+  animationIn: 'drop',
+  animationOut: 'bubble',
+  lifespan:3000,
+  touchIcon:true
+};
+  </script>
+  <script type="application/javascript" src="lib/add2home.js"></script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-510249-13']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+-->
+</head>
+<body>
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="new3Rs" data-hashtags="pronunciation">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <div class="fb-like" style="left:-15px;top:-3px;" data-send="false" data-layout="button_count" data-width="110" data-show-faces="true"></div>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <g:plusone></g:plusone>
+</div>
+  <h1>発音練習サイト Aloud</h1>
+  <p>人を相手に英語の練習は恥ずかしかったりしますね。でもiPad/iPhoneなら恥ずかしがらなくても大丈夫。数々の名言を自分に言い聞かせるように思い切って練習しましょう。</p>
+  <div id="quote"></div>
+  <div id="translate" style="height: 16px;"></div>
+  <p></p>
+  <form>
+    <input id="input" type="text" size="80"></input>
+  </form>
+  <p>上の欄をタッチしてキーボードを英語モードにして、ディクテーション機能を使って文章を読み上げてください。</p>
+  <div id="result"></div>
+  <div id="points"></div>
+  <p>再挑戦するには"r"をタイプしてください。</p>
+  <p>次のフレーズに挑戦するには"n"をタイプしてください。</p>
+  <br>
+  <br>
+  <br>
+  <p>名言とその訳には<a href="http://matome.naver.jp/odai/2124542876472673631">「いつの時代も色褪せない英語の名言」</a>を借用しました。感謝致します。</p>
+  <script src="aloud.min.js"></script>
+</body>
+</html>
